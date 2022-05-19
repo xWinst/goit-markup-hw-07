@@ -63,149 +63,151 @@
         <!-- main page -->
         <main>
             <!-- Портфолио -->
-            <section class="section container portfolio">
-                <h1 class="unvisible">Портфолио</h1>
-                <ul class="portfolio-btn-list">
-                    <li><button class="portfolio-btn current-btn" type="button">Все</button></li>
-                    <li><button class="portfolio-btn" type="button">Веб-сайты</button></li>
-                    <li><button class="portfolio-btn" type="button">Приложения</button></li>
-                    <li><button class="portfolio-btn" type="button">Дизайн</button></li>
-                    <li><button class="portfolio-btn" type="button">Маркетинг</button></li>
-                </ul>
-                <ul class="project-list">
-                    <li class="project-item">
-                        <a href="" class="project-link">
-                            <div class="project-img">
-                                <img src="./images/example_1.jpg" alt="Пример работы" width="370" />
-                                <div class="project-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
-                                                            Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице. 
+            <section class="section">
+                <div class="section__container">
+                    <h1 class="unvisible">Портфолио</h1>
+                    <ul class="filter">
+                        <li><button class="filter__btn filter__btn--current" type="button">Все</button></li>
+                        <li><button class="filter__btn" type="button">Веб-сайты</button></li>
+                        <li><button class="filter__btn" type="button">Приложения</button></li>
+                        <li><button class="filter__btn" type="button">Дизайн</button></li>
+                        <li><button class="filter__btn" type="button">Маркетинг</button></li>
+                    </ul>
+                    <ul class="grid">
+                        <li class="grid__item">
+                            <a href="" class="project">
+                                <div class="project__img">
+                                    <img src="./images/example_1.jpg" alt="Пример работы" width="370" />
+                                    <div class="project__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                                                                Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице. 
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="project-description">
-                                <h2 class="project-title">Технокряк</h2>
-                                <p class="project-type">Веб-сайт</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project-item">
-                        <a href="" class="project-link">
-                            <div class="project-img">
-                                <img src="./images/example_2.jpg" alt="Пример работы" width="370" />
-                                <div class="project-overlay">Выбор дизайна постера – это всегда сложный процесс, 
-                                                            поскольку существует бесконечное количество вариантов 
-                                                            вместе с отсутствием правил по его созданию.
+                                <div class="project__description">
+                                    <h2 class="project__title">Технокряк</h2>
+                                    <p class="project__type">Веб-сайт</p>
                                 </div>
-                            </div>
-                            <div class="project-description">
-                                <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
-                                <p class="project-type">Дизайн</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project-item">
-                        <a href="" class="project-link">
-                            <div class="project-img">
-                                <img src="./images/example_3.jpg" alt="Пример работы" width="370" />
-                                <div class="project-overlay">Моментальное оформление заказа. Удобное и наглядное расположение элементов. 
-                                                            Любой пользователь осваивает работу максимум за 5 минут и уже может оформить свой первый заказ.
+                            </a>
+                        </li>
+                        <li class="grid__item">
+                            <a href="" class="project">
+                                <div class="project__img">
+                                    <img src="./images/example_2.jpg" alt="Пример работы" width="370" />
+                                    <div class="project__overlay">Выбор дизайна постера – это всегда сложный процесс, 
+                                                                поскольку существует бесконечное количество вариантов 
+                                                                вместе с отсутствием правил по его созданию.
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="project-description">
-                                <h2 class="project-title">Ресторан Seafood</h2>
-                                <p class="project-type">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project-item">
-                        <a href="" class="project-link">
-                            <div class="project-img">
-                                <img src="./images/example_4.jpg" alt="Пример работы" width="370" />
-                                <div class="project-overlay">Проект yсовершенствует все кореллирyющие  
-                                                             аспекты в yсловиях абстрактного хаоса. 
-                                                             Может экстраполировать любой процесс дифференциации в обоих направлениях.
+                                <div class="project__description">
+                                    <h2 class="project__title">Постер New Orlean vs Golden Star</h2>
+                                    <p class="project__type">Дизайн</p>
                                 </div>
-                            </div>
-                            <div class="project-description">
-                                <h2 class="project-title">Проект Prime</h2>
-                                <p class="project-type">Маркетинг</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project-item">
-                        <a href="" class="project-link">
-                            <div class="project-img">
-                                <img src="./images/example_5.jpg" alt="Пример работы" width="370" />
-                                <div class="project-overlay">Данное приложение позволяет вволю налюбоваться красивыми коробочками
-                                                             разных цветов, размеров, запахов и вкусов. Интуитивно понятный интерфейс.
-                                                             Осваивается за 2-3 года. 
+                            </a>
+                        </li>
+                        <li class="grid__item">
+                            <a href="" class="project">
+                                <div class="project__img">
+                                    <img src="./images/example_3.jpg" alt="Пример работы" width="370" />
+                                    <div class="project__overlay">Моментальное оформление заказа. Удобное и наглядное расположение элементов. 
+                                                                Любой пользователь осваивает работу максимум за 5 минут и уже может оформить свой первый заказ.
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="project-description">
-                                <h2 class="project-title">Проект Boxes</h2>
-                                <p class="project-type">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project-item">
-                        <a href="" class="project-link">
-                            <div class="project-img">
-                                <img src="./images/example_6.jpg" alt="Пример работы" width="370" />
-                                <div class="project-overlay">Ресурс позволяющий разрушить все границы вашему вдохновению.
-                                                             Если раньше каждый вдох сопровождался выдохом, то на данном
-                                                             ресурсе Вы можете обойти это ограничение. 
+                                <div class="project__description">
+                                    <h2 class="project__title">Ресторан Seafood</h2>
+                                    <p class="project__type">Приложение</p>
                                 </div>
-                            </div>
-                            <div class="project-description">
-                                <h2 class="project-title">Inspiration has no Borders</h2>
-                                <p class="project-type">Веб-сайт</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project-item">
-                        <a href="" class="project-link">
-                            <div class="project-img">
-                                <img src="./images/example_7.jpg" alt="Пример работы" width="370" />
-                                <div class="project-overlay">— А дизайнера можно к телефону? <br>
-                                                             — Он занят…<br>
-                                                             — А что он делает?<br>
-                                                             — Его бьют.<br>
+                            </a>
+                        </li>
+                        <li class="grid__item">
+                            <a href="" class="project">
+                                <div class="project__img">
+                                    <img src="./images/example_4.jpg" alt="Пример работы" width="370" />
+                                    <div class="project__overlay">Проект yсовершенствует все кореллирyющие  
+                                                                 аспекты в yсловиях абстрактного хаоса. 
+                                                                 Может экстраполировать любой процесс дифференциации в обоих направлениях.
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="project-description">
-                                <h2 class="project-title">Издание Limited Edition</h2>
-                                <p class="project-type">Дизайн</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project-item">
-                        <a href="" class="project-link">
-                            <div class="project-img">
-                                <img src="./images/example_8.jpg" alt="Пример работы" width="370" />
-                                <div class="project-overlay">Маркетинг — искусство так послать куда подальше, что посланный с нетерпением ждет путешествия.
-                                                             Десять лет на рынке! Помогите, блин, найти выход!
+                                <div class="project__description">
+                                    <h2 class="project__title">Проект Prime</h2>
+                                    <p class="project__type">Маркетинг</p>
                                 </div>
-                            </div>
-                            <div class="project-description">
-                                <h2 class="project-title">Проект LAB</h2>
-                                <p class="project-type">Маркетинг</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project-item">
-                        <a href="" class="project-link">
-                            <div class="project-img">
-                                <img src="./images/example_9.jpg" alt="Пример работы" width="370" />
-                                <div class="project-overlay">— Стив Джобс начал свой грандиозный бизнес, имея только паяльник и гараж!<br>
-                                                             — Ну, у нас так многие начинали... И утюг еще. 
+                            </a>
+                        </li>
+                        <li class="grid__item">
+                            <a href="" class="project">
+                                <div class="project__img">
+                                    <img src="./images/example_5.jpg" alt="Пример работы" width="370" />
+                                    <div class="project__overlay">Данное приложение позволяет вволю налюбоваться красивыми коробочками
+                                                                 разных цветов, размеров, запахов и вкусов. Интуитивно понятный интерфейс.
+                                                                 Осваивается за 2-3 года. 
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="project-description">
-                                <h2 class="project-title">Growing Business</h2>
-                                <p class="project-type">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+                                <div class="project__description">
+                                    <h2 class="project__title">Проект Boxes</h2>
+                                    <p class="project__type">Приложение</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="grid__item">
+                            <a href="" class="project">
+                                <div class="project__img">
+                                    <img src="./images/example_6.jpg" alt="Пример работы" width="370" />
+                                    <div class="project__overlay">Ресурс позволяющий разрушить все границы вашему вдохновению.
+                                                                 Если раньше каждый вдох сопровождался выдохом, то на данном
+                                                                 ресурсе Вы можете обойти это ограничение. 
+                                    </div>
+                                </div>
+                                <div class="project__description">
+                                    <h2 class="project__title">Inspiration has no Borders</h2>
+                                    <p class="project__type">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="grid__item">
+                            <a href="" class="project">
+                                <div class="project__img">
+                                    <img src="./images/example_7.jpg" alt="Пример работы" width="370" />
+                                    <div class="project__overlay">— А дизайнера можно к телефону? <br>
+                                                                 — Он занят…<br>
+                                                                 — А что он делает?<br>
+                                                                 — Его бьют.<br>
+                                    </div>
+                                </div>
+                                <div class="project__description">
+                                    <h2 class="project__title">Издание Limited Edition</h2>
+                                    <p class="project__type">Дизайн</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="grid__item">
+                            <a href="" class="project">
+                                <div class="project__img">
+                                    <img src="./images/example_8.jpg" alt="Пример работы" width="370" />
+                                    <div class="project__overlay">Маркетинг — искусство так послать куда подальше, что посланный с нетерпением ждет путешествия.
+                                                                 Десять лет на рынке! Помогите, блин, найти выход!
+                                    </div>
+                                </div>
+                                <div class="project__description">
+                                    <h2 class="project__title">Проект LAB</h2>
+                                    <p class="project__type">Маркетинг</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="grid__item">
+                            <a href="" class="project">
+                                <div class="project__img">
+                                    <img src="./images/example_9.jpg" alt="Пример работы" width="370" />
+                                    <div class="project__overlay">— Стив Джобс начал свой грандиозный бизнес, имея только паяльник и гараж!<br>
+                                                                 — Ну, у нас так многие начинали... И утюг еще. 
+                                    </div>
+                                </div>
+                                <div class="project__description">
+                                    <h2 class="project__title">Growing Business</h2>
+                                    <p class="project__type">Приложение</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </main>
 
